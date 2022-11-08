@@ -1,0 +1,16 @@
+body {
+    color: black;
+    background-color: white;
+}
+div.header{
+    background-color: blue;
+    width: 75%;
+}
+div.navBar{
+    background-color: red;
+    width: 25%;
+}
+div.blog{
+    background-color: green;
+    width: 75%;
+}
