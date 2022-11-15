@@ -1,42 +1,59 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>{{title}}</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <h1>Hello World</h1>
-         <ul>
-            {% for txt in data%}
-            <ul>{{txt.blog_id}} - {{txt.blog_txt}}  </ul>
-            {% endfor%}
-        </ul>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{title}}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./public/stylesheets/style.css">
+  </head>
+  <body>
+    <div class="header">
+      <h1>Blog</h1>
+      <img src="./img/filename.jpg" alt="Cool Header Image">
+    </div>
 
+    <div class="navBar">
+      <div class="blogFunction">
         <hr>
         <h2>Add stuff</h2>
         <form action="/add" method="POST">
-            <div>
-                <label for="blog">What is your blog txt?</label>
-                <input name="blog" id="blog" value="Hi this is my blog text!" />
-            </div>
-            <div>
-                <button>Send my blog</button>
-            </div>
+          <div>
+            <label for="blog">What is your blog txt?</label>
+            <input name="blog" id="blog" value="Hi this is my blog text!"/>
+          </div>
+          <div>
+            <button>Send my blog</button>
+          </div>
         </form>
+      </div>
+      <div class="blogFunction">
+        <h2>Edit Post</h2>
+      </div>
+      <div class="blogFunction">
         <hr>
         <h2>Delete stuff</h2>
-                <form action="/delete" method="POST">
-            <div>
-                <label for="blog">Blog to delete?</label>
-                <input name="blog" id="blog" value="1" />
-            </div>
-            <div>
-                <button>delete my blog</button>
-            </div>
+        <form action="/delete" method="POST">
+          <div>
+            <label for="blog">Blog to delete?</label>
+            <input name="blog" id="blog" value="1"/>
+          </div>
+          <div>
+            <button>delete my blog</button>
+          </div>
         </form>
-    </body>
+      </div>
+    </div>
+
+    <div class="blog">
+      <ul>
+        {% for txt in data%}
+          <ul>{{txt.blog_id}} - {{txt.blog_txt}}
+          </ul>
+        {% endfor%}
+      </ul>
+    </div>
+
+  </body>
 </html>
