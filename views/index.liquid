@@ -6,54 +6,51 @@
     <title>{{title}}</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../public/stylesheets/style.css">
+    <link rel="stylesheet" href="./stylesheets/style.css" type="text/css">
   </head>
   <body>
-    <div class="header">
-      <h1>Blog</h1>
-      <img src="./img/filename.jpg" alt="Cool Header Image">
-    </div>
+    <div class="wrapper">
+      <div class="header">
+        <h1>Ethan's Blog</h1>
+      </div>
 
-    <div class="navBar">
-      <div class="blogFunction">
-        <hr>
-        <h2>Add stuff</h2>
-        <form action="/add" method="POST">
-          <div>
-            <label for="blog">What is your blog txt?</label>
-            <input name="blog" id="blog" value="Hi this is my blog text!"/>
-          </div>
-          <div>
-            <button>Send my blog</button>
-          </div>
-        </form>
+      <div class="navBar">
+        <div class="blogFunction">
+          <h2>Post to Blog</h2>
+          <form action="/add" method="POST">
+            <div>
+              <label for="blog">Post:</label>
+              <input name="blog" id="blog" value="Hi this is my blog text!"/>
+            </div>
+            <div>
+              <button>Send my blog</button>
+            </div>
+          </form>
+        </div>
+        <div class="blogFunction">
+          <h2>Edit Post</h2>
+        </div>
+        <div class="blogFunction">
+          <h2>Delete stuff</h2>
+          <form action="/delete" method="POST">
+            <div>
+              <label for="blog">Post to delete:</label>
+              <input name="blog" id="blog" value="1"/>
+            </div>
+            <div>
+              <button>delete my blog</button>
+            </div>
+          </form>
+        </div>
       </div>
-      <div class="blogFunction">
-        <h2>Edit Post</h2>
-      </div>
-      <div class="blogFunction">
-        <hr>
-        <h2>Delete stuff</h2>
-        <form action="/delete" method="POST">
-          <div>
-            <label for="blog">Blog to delete?</label>
-            <input name="blog" id="blog" value="1"/>
-          </div>
-          <div>
-            <button>delete my blog</button>
-          </div>
-        </form>
-      </div>
-    </div>
 
-    <div class="blog">
-      <ul>
+      <div class="blog">
         {% for txt in data%}
-          <ul>{{txt.blog_id}} - {{txt.blog_txt}}
-          </ul>
-        {% endfor%}
-      </ul>
+          <p class="post-details">Post: {{txt.blog_id}} - Posted on:
+          </p>
+          <p class="post-content">{{txt.blog_txt}}</p>
+        {%endfor%}
+      </div>
     </div>
-
   </body>
 </html>

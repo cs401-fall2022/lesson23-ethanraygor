@@ -35,4 +35,8 @@ https://www.w3schools.com/tags/tag_input.asp
 https://www.w3schools.com/jsref/jsref_forEach.asp
 https://www.npmjs.com/package/sqlite3#installing
 https://github.com/TryGhost/node-sqlite3/wiki/API
-
+https://stackoverflow.com/questions/51143219/refused-to-apply-style-from-http-localhost3000-css-style-css-because-its-mi
+https://developer.mozilla.org/en-US/docs/Web/CSS
+https://www.freecodecamp.org/news/how-to-center-a-div-with-css/
+https://teamcolorcodes.com/boise-state-colors/
+https://stackoverflow.com/questions/5721904/make-body-fill-entire-screen
