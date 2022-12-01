@@ -29,4 +29,10 @@ TODO
 
 ## Sources used
 
-TODO
+Class Textbook
+https://www.geeksforgeeks.org/javascript-addeventlistener-with-examples/
+https://www.w3schools.com/tags/tag_input.asp
+https://www.w3schools.com/jsref/jsref_forEach.asp
+https://www.npmjs.com/package/sqlite3#installing
+https://github.com/TryGhost/node-sqlite3/wiki/API
+
