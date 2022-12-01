@@ -1,18 +1,8 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  color: black;
-  background-color: white;
 }
-div.header{
-  background-color: blue;
-  width: 75%;
-}
-div.navBar{
-  background-color: red;
-  width: 25%;
-}
-div.blog{
-  background-color: green;
-  width: 75%;
+
+a {
+  color: #00B7FF;
 }

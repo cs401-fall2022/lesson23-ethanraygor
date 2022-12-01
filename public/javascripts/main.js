@@ -8,6 +8,7 @@ function getHomePage(){
    db.each("SELECT blog_id, blog_txt FROM blog",
    (err, row) => {
         document.writeln("<p>"+row.blog_id+" - "+row.blog_txt+"</p>");
+        document.writeln("<p>getHomePage called</p>");
    });
 }
 
@@ -19,7 +20,8 @@ function post(blogPost){
             exit(1);
         }
         console.log("inserting "+blogPost);
-        db.exec(`insert into blog ( blog_txt) values ('${blogPost}');`)
+        db.exec(`insert into blog ( blog_txt) values ('${blogPost}');`);
+        document.writeln("<p>Post working</p>");
     });
 }
 
