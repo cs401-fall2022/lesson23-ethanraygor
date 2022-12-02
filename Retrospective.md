@@ -1,7 +1,7 @@
 # Retrospective
 
-- name: Jane Doe
-- email: janedoe@u.boisestate.edu
+- name: Ethan Raygor
+- email: ethanraygor@u.boisestate.edu
 
 ## Instructions
 
@@ -21,11 +21,11 @@ Be safe CITE!
 
 ## Experience
 
-TODO
+I wasn't sure if the project needed to run alone in the web browser or if we were able to use express and a local host. I tried to get my project to run in the browser first but it was very difficult so I settled for using the local host. The development process went well overall and I feel like I did a good job. My website's design is quite simple but I tried to use different types of css rules and I used multiple stylesheets. I was able to complete the entire project.
 
 ## Known issues or Bugs
 
-TODO
+No known issues or bugs
 
 ## Sources used
 
