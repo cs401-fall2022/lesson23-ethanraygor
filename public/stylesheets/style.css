@@ -36,6 +36,24 @@ body {
   border: solid;
   border-color: maroon;
   border-width: 0px 5px 0px 0px;
+  width: 270px;
+  display: grid;
+  grid-template-rows: repeat(3, 200px);
+  grid-template-columns: 270px;
+}
+
+.navBar > .blogFunction {
+  margin: 25px 25px 0 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.navBar > .blogFunction > button {
+  width: 150px;
+  height: 100px;
+  background-color: maroon;
+  font-weight: bolder;
 }
 
 .blog {

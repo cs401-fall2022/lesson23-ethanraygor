@@ -15,7 +15,6 @@
       </div>
 
       <div class="navBar">
-        <h2>Blog Things</h2>
         <div class="blogFunction">
           <button onclick="window.open('./pages/add.html'); window.close()">Add a Post</button>
         </div>
@@ -25,9 +24,11 @@
         <div class="blogFunction">
           <button onclick="window.open('./pages/delete.html'); window.close()">Delete a Post</button>
         </div>
-        <div class="blogFunction">
+        {%comment%}
+          <div class="blogFunction">
           <button onclick="window.open('./pages/admin.html'); window.close()">ADMIN</button>
-        </div>
+          </div>
+        {%endcomment%}
       </div>
 
       <div class="blog">
