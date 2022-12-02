@@ -40,3 +40,6 @@ https://developer.mozilla.org/en-US/docs/Web/CSS
 https://www.freecodecamp.org/news/how-to-center-a-div-with-css/
 https://teamcolorcodes.com/boise-state-colors/
 https://stackoverflow.com/questions/5721904/make-body-fill-entire-screen
+https://social.msdn.microsoft.com/Forums/en-US/ffc8b9ef-e09c-47e2-b91c-5e4d610751c0/how-open-window-from-server-side?forum=aspwebforms
+https://www.w3schools.com/sql/sql_insert.asp
+https://www.sqltutorial.org/sql-date-functions/sql-current-date/

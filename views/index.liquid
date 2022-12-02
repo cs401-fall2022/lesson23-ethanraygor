@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{title}}</title>
+    <title>Ethan's Blog</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./stylesheets/style.css" type="text/css">
@@ -15,39 +15,24 @@
       </div>
 
       <div class="navBar">
+        <h2>Blog Things</h2>
         <div class="blogFunction">
-          <h2>Post to Blog</h2>
-          <form action="/add" method="POST">
-            <div>
-              <label for="blog">Post:</label>
-              <input name="blog" id="blog" value="Hi this is my blog text!"/>
-            </div>
-            <div>
-              <button>Send my blog</button>
-            </div>
-          </form>
+          <button onclick="window.open('./pages/add.html'); window.close()">Add a Post</button>
         </div>
         <div class="blogFunction">
-          <h2>Edit Post</h2>
+          <button onclick="window.open('./pages/edit.html'); window.close()">Edit a Post</button>
         </div>
         <div class="blogFunction">
-          <h2>Delete stuff</h2>
-          <form action="/delete" method="POST">
-            <div>
-              <label for="blog">Post to delete:</label>
-              <input name="blog" id="blog" value="1"/>
-            </div>
-            <div>
-              <button>delete my blog</button>
-            </div>
-          </form>
+          <button onclick="window.open('./pages/delete.html'); window.close()">Delete a Post</button>
+        </div>
+        <div class="blogFunction">
+          <button onclick="window.open('./pages/admin.html'); window.close()">ADMIN</button>
         </div>
       </div>
 
       <div class="blog">
         {% for txt in data%}
-          <p class="post-details">Post: {{txt.blog_id}} - Posted on:
-          </p>
+          <p class="post-details">Post: {{txt.blog_id}} - Posted on: {{txt.blog_date}}</p>
           <p class="post-content">{{txt.blog_txt}}</p>
         {%endfor%}
       </div>
