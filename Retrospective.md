@@ -43,4 +43,5 @@ https://stackoverflow.com/questions/5721904/make-body-fill-entire-screen
 https://social.msdn.microsoft.com/Forums/en-US/ffc8b9ef-e09c-47e2-b91c-5e4d610751c0/how-open-window-from-server-side?forum=aspwebforms
 https://www.w3schools.com/sql/sql_insert.asp
 https://www.sqltutorial.org/sql-date-functions/sql-current-date/
-https://stackoverflow.com/questions/27007323/how-do-you-comment-out-in-liquid
+https://stackoverflow.com/questions/27007323/how-do-you-comment-out-in-liquid\
+https://www.w3schools.com/SQL/sql_update.asp

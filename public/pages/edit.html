@@ -5,18 +5,18 @@
         <title>Edit Post</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./stylesheets/popup.css" type="text/css">
+        <link rel="stylesheet" href="../stylesheets/popup.css" type="text/css">
     </head>
     <body>
         <h1>Edit a Post</h1>
         <form action="/edit" method="POST">
-            <div>
-              <label for="blog">Enter the number of the post you would like to edit (0 to cancel)</label>
-              <input name="blog" id="blog" value="0"/>
+            <div class="labelHolder">
+              <label for="blognum">Enter the number of the post you would like to edit (0 to cancel)</label>
+              <input name="blognum" id="blognum" value="0"/>
               <label for="blog">What would you like to post instead?</label>
-              <input name="blog" id="blog" value="Hi this is my blog text!"/>
+              <input name="blog" id="blog" value="This post has been edited!"/>
             </div>
-            <div>
+            <div class="buttonHolder">
               <button>EDIT</button>
             </div>
         </form>
